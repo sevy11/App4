@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2650A5411BB9DD1A0036A3C3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */; };
 		26CCE6C41B4C6A3700E8C7C9 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6C31B4C6A3700E8C7C9 /* Color.m */; };
 		26CCE6C81B4CB38000E8C7C9 /* SocMediaTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6C71B4CB38000E8C7C9 /* SocMediaTextView.m */; };
 		26CCE6CD1B4DAA6D00E8C7C9 /* SocMediaMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6CC1B4DAA6D00E8C7C9 /* SocMediaMessageView.m */; };
 		26CCE6D31B4F120200E8C7C9 /* ShortSocMediaMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6D21B4F120200E8C7C9 /* ShortSocMediaMessageView.m */; };
+		26E352E71B7D208800477444 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E352E61B7D208800477444 /* SearchViewController.m */; };
 		26EEF07C1B3B77A400E4B90C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EEF07B1B3B77A400E4B90C /* main.m */; };
 		26EEF07F1B3B77A400E4B90C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EEF07E1B3B77A400E4B90C /* AppDelegate.m */; };
 		26EEF0821B3B77A400E4B90C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EEF0811B3B77A400E4B90C /* ViewController.m */; };
@@ -51,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		26CCE6C21B4C6A3700E8C7C9 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		26CCE6C31B4C6A3700E8C7C9 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		26CCE6C61B4CB38000E8C7C9 /* SocMediaTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocMediaTextView.h; sourceTree = "<group>"; };
@@ -59,6 +62,8 @@
 		26CCE6CC1B4DAA6D00E8C7C9 /* SocMediaMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocMediaMessageView.m; sourceTree = "<group>"; };
 		26CCE6D11B4F120200E8C7C9 /* ShortSocMediaMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortSocMediaMessageView.h; sourceTree = "<group>"; };
 		26CCE6D21B4F120200E8C7C9 /* ShortSocMediaMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortSocMediaMessageView.m; sourceTree = "<group>"; };
+		26E352E51B7D208800477444 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		26E352E61B7D208800477444 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		26EEF0761B3B77A400E4B90C /* ApplifyBeta4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplifyBeta4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EEF07A1B3B77A400E4B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EEF07B1B3B77A400E4B90C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2650A5411BB9DD1A0036A3C3 /* libsqlite3.0.tbd in Frameworks */,
 				26F1CA3F1B421D6500B19518 /* AudioToolbox.framework in Frameworks */,
 				26F1CA481B421DA800B19518 /* libz.dylib in Frameworks */,
 				26F1CA461B421D9900B19518 /* libsqlite3.dylib in Frameworks */,
@@ -142,7 +148,7 @@
 			path = ApplifyBeta4;
 			sourceTree = "<group>";
 		};
-		26CCE6C91B4CB38A00E8C7C9 /* Views */ = {
+		26CCE6C91B4CB38A00E8C7C9 /* View Classes */ = {
 			isa = PBXGroup;
 			children = (
 				26CCE6CB1B4DAA6D00E8C7C9 /* SocMediaMessageView.h */,
@@ -152,7 +158,7 @@
 				26CCE6D11B4F120200E8C7C9 /* ShortSocMediaMessageView.h */,
 				26CCE6D21B4F120200E8C7C9 /* ShortSocMediaMessageView.m */,
 			);
-			name = Views;
+			name = "View Classes";
 			sourceTree = "<group>";
 		};
 		26CCE6CA1B4CB3A600E8C7C9 /* View Controllers */ = {
@@ -165,6 +171,8 @@
 				26EEF09F1B3B789900E4B90C /* FeedTableViewController.h */,
 				26EEF0A01B3B789900E4B90C /* FeedTableViewController.m */,
 				26EEF0831B3B77A400E4B90C /* Main.storyboard */,
+				26E352E51B7D208800477444 /* SearchViewController.h */,
+				26E352E61B7D208800477444 /* SearchViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +180,7 @@
 		26EEF06D1B3B77A400E4B90C = {
 			isa = PBXGroup;
 			children = (
+				2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */,
 				26EEF0781B3B77A400E4B90C /* ApplifyBeta4 */,
 				26EEF07D1B3B77A400E4B90C /* AppDelegate.h */,
 				26EEF07E1B3B77A400E4B90C /* AppDelegate.m */,
@@ -198,8 +207,8 @@
 			children = (
 				26CCE6CA1B4CB3A600E8C7C9 /* View Controllers */,
 				26EEF0A91B3B7D7C00E4B90C /* Custom Cells */,
-				26CCE6C91B4CB38A00E8C7C9 /* Views */,
 				26EEF0A51B3B78D100E4B90C /* Classes */,
+				26CCE6C91B4CB38A00E8C7C9 /* View Classes */,
 				26EEF0861B3B77A400E4B90C /* Images.xcassets */,
 				26EEF0881B3B77A400E4B90C /* LaunchScreen.xib */,
 			);
@@ -367,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F1CA4B1B421F7500B19518 /* LogInViewController.m in Sources */,
+				26E352E71B7D208800477444 /* SearchViewController.m in Sources */,
 				26EEF0821B3B77A400E4B90C /* ViewController.m in Sources */,
 				26CCE6D31B4F120200E8C7C9 /* ShortSocMediaMessageView.m in Sources */,
 				26EEF0A81B3B7CFD00E4B90C /* SocialMediaTableViewCell.m in Sources */,

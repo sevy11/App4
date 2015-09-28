@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialMedia.h"
+
 
 @interface SocialMediaTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *screenName;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
@@ -18,4 +21,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet UIImageView *socialMediaImage;
 
+//class methods
+-(NSData *)imageForMainPic:(BOOL) mainImage;
+
+-(void)mainImageHeightAndWidth;
+-(void)configureObjectInCell;
+-(void)removeMainImageFromView;
+-(void)rowHeightForNoImage;
+
 @end
+
+

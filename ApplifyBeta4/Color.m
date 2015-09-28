@@ -14,6 +14,10 @@
     return     [UIColor colorWithRed:85.0/255.0 green:172.0/255.0 blue:238.0/255.0 alpha:1.0];
 }
 
++ (UIColor *)twitterDarkBlue    {
+    return [UIColor colorWithRed:14.0/255 green:111/255 blue:165.0/255 alpha:1.0];
+}
+
 + (UIColor *)fontWhite
 {
     return [UIColor colorWithRed:245.0/255.0 green:248.0/255.0 blue:250.0/255.0 alpha:1];

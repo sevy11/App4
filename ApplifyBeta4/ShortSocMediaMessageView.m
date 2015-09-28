@@ -31,9 +31,12 @@
     CGRect frame = self.frame;
     frame.size.height = [self getLayoutHeight];
     self.frame = frame;
+
+
 }
 
 #pragma Constraints for all Social Media Message View Objects
+
 -(void)addConstraintsToTopObjects{
     UIImageView *profileImageView = super.profileImageView;
     UIImageView *socMediaTypeImage = super.socMediaTypeView;
@@ -89,9 +92,7 @@
                                                                    attribute:NSLayoutAttributeNotAnAttribute
                                                                   multiplier:1
                                                                     constant:0];
-
     [self addConstraint:super.socMediaTextViewHeightCon];
-
 }
 
 //main Image Constraints
@@ -111,7 +112,6 @@
                           metrics:nil
                           views:NSDictionaryOfVariableBindings(socMediaTextView, mainImageView)]];
 }
-
 
 -(CGFloat)getLayoutHeight{
     CGFloat profileImageHeight = 5 + super.profileImageView.frame.size.height;

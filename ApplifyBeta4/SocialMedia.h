@@ -19,9 +19,14 @@
 
 @property NSData *userPicData;
 @property NSData *mainPicData;
+@property NSURL *mainPicPageURL;
+
+@property NSString *bookLocation;
+@property NSString *bookUserID;
 @property BOOL mainImageBool;
+@property BOOL isVerified;
 
-
+@property NSArray *faceboookCommentsArray;
 
 
 @end

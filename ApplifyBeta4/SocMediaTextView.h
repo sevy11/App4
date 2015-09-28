@@ -12,6 +12,7 @@
 @interface SocMediaTextView : NSObject
 
     //public Class methods can be used with just a class name while and instance method need the specific instnace of a class
+    + (CGRect)defaultContentFrame;
     + (UIFont *)defaultFont;
     + (UIFont *)largerFont;
 

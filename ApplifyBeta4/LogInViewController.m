@@ -28,9 +28,8 @@
 
     self.backgroundImage.image = [UIImage imageNamed:@"Applify"];
     self.backgroundImage.alpha = .045;
-//    self.view.backgroundColor = [UIColor blueColor];
-//    self.view.alpha = .04;
-
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -54,7 +53,7 @@
     } else{
         [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error){
             if (error) {
-                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please complete both username and password" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Username or Password is incorrect" preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *action = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
                 }];

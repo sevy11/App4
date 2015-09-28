@@ -15,25 +15,25 @@
 
 @interface SocMediaMessageView : UIView
 
-@property UIImageView *socMediaTypeView;
-@property UIImageView *profileImageView;
-@property UIImageView *mainImageView;
-
-@property UILabel *screenNameLabel;
-@property UILabel *timeLabel;
-@property SocialMedia *mediaContent;
-@property SocMediaTextView *textView;
-
-@property NSLayoutConstraint *socMediaTextViewHeightCon;
-
 + (void)setupContentInTextView:(SocMediaMessageView *)view;
 + (CGRect):defaultContentFrame;
 + (UILabel *)setupLabelWithFont:(UIFont *)font andColor:(UIColor *)fontColor;
 + (UIImageView *)setupImageView;
-+ (void)loadImageFromNSDataAndKeyword:(NSString *)keyword imageData:(NSData *)data imageView:(UIImageView *)imageView;
+//+ (void)loadImageFromNSDataAndKeyword:(NSString *)keyword imageData:(NSData *)data imageView:(UIImageView *)imageView;
+
+@property SocialMedia *mediaContent;
+@property SocMediaTextView *textView;
+@property UIImageView *socMediaTypeView;
+@property UIImageView *profileImageView;
+@property UIImageView *mainImageView;
+@property UILabel *screenNameLabel;
+@property UILabel *timeLabel;
+
+//constraints
+@property NSLayoutConstraint *socMediaTextViewHeightCon;
+
 
 //instance methods
-
 -(void)updateContentWithSocMediaMessage:(SocialMedia *)content;
 
 

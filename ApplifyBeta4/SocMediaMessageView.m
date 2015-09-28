@@ -16,8 +16,7 @@
 
 @implementation SocMediaMessageView
 
-+ (CGRect)defaultContentFrame
-{
++ (CGRect)defaultContentFrame   {
     return CGRectMake((7 + 25 + 5), 25, 274, 125);
 }
 
@@ -55,7 +54,7 @@
 - (void)updateContentWithSocMediaMessage:(SocialMedia *)content{
     _mediaContent = content;
 
-    //update Subviews
+    //update Subviews and social media message information
 //    [SocMediaMessageView loadImageFromNSDataAndKeyword:<#(NSString *)#> imageData:<#(NSData *)#> imageView:<#(UIImageView *)#>:content.userPicData imageView:_profileImageView];
     _screenNameLabel.text = content.screenName;
     _timeLabel.text = content.timeDiff;
@@ -76,17 +75,13 @@
     return label;
 }
 
-+ (UIImageView *)setupImageView{
++ (UIImageView *)setupImageView {
     UIImageView *imageView = [UIImageView new];
     imageView.clipsToBounds = YES;
     imageView.layer.cornerRadius = 4.0;
     return imageView;
 }
 
-+ (void)loadImageFromNSDataAndKeyword:(NSString *)keyword imageData:(NSData *)data imageView:(UIImageView *)imageView {
-
-
-}
 
 
 

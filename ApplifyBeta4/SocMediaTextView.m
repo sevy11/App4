@@ -17,6 +17,10 @@
 @implementation SocMediaTextView
 
 //class methods
++ (CGRect)defaultContentFrame{
+    return CGRectMake((7 + 25 + 5), 25, 274, 125);
+}
+
 + (UIFont *)defaultFont {
     return [UIFont systemFontOfSize:14.0];
 }
