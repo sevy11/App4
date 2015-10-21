@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260FBE2B1BD71AAB00C1D88B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260FBE2A1BD71AAB00C1D88B /* AVFoundation.framework */; };
 		2650A5411BB9DD1A0036A3C3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */; };
+		2650A5431BB9E0290036A3C3 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2650A5421BB9E0290036A3C3 /* Spotify.framework */; settings = {ASSET_TAGS = (); }; };
 		26CCE6C41B4C6A3700E8C7C9 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6C31B4C6A3700E8C7C9 /* Color.m */; };
 		26CCE6C81B4CB38000E8C7C9 /* SocMediaTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6C71B4CB38000E8C7C9 /* SocMediaTextView.m */; };
 		26CCE6CD1B4DAA6D00E8C7C9 /* SocMediaMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CCE6CC1B4DAA6D00E8C7C9 /* SocMediaMessageView.m */; };
@@ -53,7 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260FBE2A1BD71AAB00C1D88B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2650A5421BB9E0290036A3C3 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		26CCE6C21B4C6A3700E8C7C9 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		26CCE6C31B4C6A3700E8C7C9 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		26CCE6C61B4CB38000E8C7C9 /* SocMediaTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocMediaTextView.h; sourceTree = "<group>"; };
@@ -67,8 +71,8 @@
 		26EEF0761B3B77A400E4B90C /* ApplifyBeta4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplifyBeta4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EEF07A1B3B77A400E4B90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EEF07B1B3B77A400E4B90C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26EEF07D1B3B77A400E4B90C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ApplifyBeta4/AppDelegate.h; sourceTree = "<group>"; };
-		26EEF07E1B3B77A400E4B90C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ApplifyBeta4/AppDelegate.m; sourceTree = "<group>"; };
+		26EEF07D1B3B77A400E4B90C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		26EEF07E1B3B77A400E4B90C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		26EEF0801B3B77A400E4B90C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ApplifyBeta4/ViewController.h; sourceTree = "<group>"; };
 		26EEF0811B3B77A400E4B90C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ApplifyBeta4/ViewController.m; sourceTree = "<group>"; };
 		26EEF0841B3B77A400E4B90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260FBE2B1BD71AAB00C1D88B /* AVFoundation.framework in Frameworks */,
 				2650A5411BB9DD1A0036A3C3 /* libsqlite3.0.tbd in Frameworks */,
 				26F1CA3F1B421D6500B19518 /* AudioToolbox.framework in Frameworks */,
 				26F1CA481B421DA800B19518 /* libz.dylib in Frameworks */,
@@ -117,6 +122,7 @@
 				26F1CA401B421D6500B19518 /* CFNetwork.framework in Frameworks */,
 				26F1CA411B421D6500B19518 /* CoreGraphics.framework in Frameworks */,
 				26F1CA421B421D6500B19518 /* CoreLocation.framework in Frameworks */,
+				2650A5431BB9E0290036A3C3 /* Spotify.framework in Frameworks */,
 				26F1CA391B421D4500B19518 /* StoreKit.framework in Frameworks */,
 				26F1CA3A1B421D4500B19518 /* SystemConfiguration.framework in Frameworks */,
 				26F1CA331B421D3600B19518 /* Accounts.framework in Frameworks */,
@@ -164,6 +170,8 @@
 		26CCE6CA1B4CB3A600E8C7C9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				26EEF07D1B3B77A400E4B90C /* AppDelegate.h */,
+				26EEF07E1B3B77A400E4B90C /* AppDelegate.m */,
 				26F1CA4C1B430FB400B19518 /* SignUpViewController.h */,
 				26F1CA4D1B430FB400B19518 /* SignUpViewController.m */,
 				26F1CA491B421F7500B19518 /* LogInViewController.h */,
@@ -180,10 +188,9 @@
 		26EEF06D1B3B77A400E4B90C = {
 			isa = PBXGroup;
 			children = (
+				260FBE2A1BD71AAB00C1D88B /* AVFoundation.framework */,
 				2650A5401BB9DD1A0036A3C3 /* libsqlite3.0.tbd */,
 				26EEF0781B3B77A400E4B90C /* ApplifyBeta4 */,
-				26EEF07D1B3B77A400E4B90C /* AppDelegate.h */,
-				26EEF07E1B3B77A400E4B90C /* AppDelegate.m */,
 				26EEF0801B3B77A400E4B90C /* ViewController.h */,
 				26EEF0811B3B77A400E4B90C /* ViewController.m */,
 				26CCE6C51B4C6A4000E8C7C9 /* Utilities */,
@@ -218,6 +225,7 @@
 		26EEF0791B3B77A400E4B90C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2650A5421BB9E0290036A3C3 /* Spotify.framework */,
 				26F1CA471B421DA800B19518 /* libz.dylib */,
 				26F1CA451B421D9900B19518 /* libsqlite3.dylib */,
 				26F1CA431B421D8300B19518 /* MobileCoreServices.framework */,
@@ -519,6 +527,7 @@
 				);
 				INFOPLIST_FILE = ApplifyBeta4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -533,6 +542,7 @@
 				);
 				INFOPLIST_FILE = ApplifyBeta4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
