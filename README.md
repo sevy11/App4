@@ -4,6 +4,4 @@ Firstly, it pings Spotify for your most recently listened to artists. From there
 Instagram for the ￼most talked about posts. It then delivers them to the user loud and clear. Throw out adding and
 deleting handles from your feed, we’ll find the relevant tweets and posts about the things you care for.
 
-
-
-![Alt text](http://postimg.org/image/iiki1ytpd/)
+![caption](/App4/ApplifyBeta4/Images.xcassets/LDR1Screenshot.imageset)
