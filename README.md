@@ -6,5 +6,4 @@ deleting handles from your feed, we’ll find the relevant tweets and posts abou
 
 ![Image](http://github.com/sevy11/App4/blob/master/ApplifyBeta4/Images.xcassets/LDR1Screenshot.imageset/Screen Shot%202015-10-22%20at%202.17.24%20PM.png)
 
-full path 
-![ScreenShot](https://raw.github.com/sevy11/App/master/Screen Shot 2015-10-22 at 2.17.24 PM.png)
+![ScreenShot](Screen Shot%202015-10-22%20at%202.17.24%20PM.png)
