@@ -29,10 +29,6 @@
     [[SPTAuth defaultInstance]setRequestedScopes:@[SPTAuthPlaylistReadPrivateScope]];
 
 
-//    [[SPTAuth defaultInstance]setClientID:@"23375a532b9f47ef9e3315cc492b55c1"];
-//    [[SPTAuth defaultInstance]setRedirectURL:[NSURL URLWithString:@"spotify-tutorial://returnafterlogin"]];
-//    [[SPTAuth defaultInstance]setRequestedScopes:@[SPTAuthPlaylistReadPrivateScope]];
-
     //construct a login url and open it
     NSURL *loginUrl = [[SPTAuth defaultInstance]loginURL];
 
@@ -43,10 +39,6 @@
 
     [Parse setApplicationId:@"tsnTuYzzMunsmaz4tWCdw3F67NqnaIPUOSfGUqbm"
                   clientKey:@"nHTum7hYSjDYTjXX12kNbf5puOfbfuOzvHSTDZva"];
-
-//old keys
-//    [Parse setApplicationId:@"qGEVmf5SdqSLRE4kFil3mmvFduBeBNbvoelvwh1B"
-//                  clientKey:@"YaAEs527yzxG6rWkjfb2zP3rzk0R0BtgDbaAYppZ"];
 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
@@ -124,6 +116,8 @@
                 NSString *URIDigitOnly = [artistURI substringFromIndex:16];
                 NSString *URINumbersOnly = [URIDigitOnly substringToIndex:22];
                 NSLog(@"playlist one data: %@, %@", artistNameString, URIDigitOnly);
+
+                //uncomment below to save Spotify Playlist data to Parse
 
 //                    PFObject *artistURINumber = [PFObject objectWithClassName:@"Artist"];
 //                    artistURINumber[@"name"] = artistNameString;

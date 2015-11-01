@@ -47,7 +47,7 @@
         [self presentViewController:alert animated:YES completion:nil];
 
     } else{
-        //set up user as a PF object
+
         PFUser *newUser = [PFUser user];
         newUser.username = username;
         newUser.password = password;

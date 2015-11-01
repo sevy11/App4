@@ -15,12 +15,6 @@
 
 @interface SocMediaMessageView : UIView
 
-+ (void)setupContentInTextView:(SocMediaMessageView *)view;
-+ (CGRect):defaultContentFrame;
-+ (UILabel *)setupLabelWithFont:(UIFont *)font andColor:(UIColor *)fontColor;
-+ (UIImageView *)setupImageView;
-//+ (void)loadImageFromNSDataAndKeyword:(NSString *)keyword imageData:(NSData *)data imageView:(UIImageView *)imageView;
-
 @property SocialMedia *mediaContent;
 @property SocMediaTextView *textView;
 @property UIImageView *socMediaTypeView;
@@ -33,8 +27,19 @@
 @property NSLayoutConstraint *socMediaTextViewHeightCon;
 
 
+
+
++ (void)setupContentInTextView:(SocMediaMessageView *)view;
++ (CGRect):defaultContentFrame;
++ (UILabel *)setupLabelWithFont:(UIFont *)font andColor:(UIColor *)fontColor;
++ (UIImageView *)setupImageView;
+//+ (void)loadImageFromNSDataAndKeyword:(NSString *)keyword imageData:(NSData *)data imageView:(UIImageView *)imageView;
+
+
 //instance methods
 -(void)updateContentWithSocMediaMessage:(SocialMedia *)content;
+-(id)initWithFrame:(CGRect)frame;
+
 
 
 @end

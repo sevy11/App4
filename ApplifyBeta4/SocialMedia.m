@@ -11,19 +11,4 @@
 @implementation SocialMedia
 
 
-
--(NSString *)whatsMyName:(NSString *)newString{
-    NSString *result;
-    if ([newString isEqualToString:@"Michael"]) {
-        result = @"Cool, can I call you Mike?";
-    } else{
-        result = @"Dude, not cool";
-    }
-
-    return result;
-}
-
-
-
-
 @end

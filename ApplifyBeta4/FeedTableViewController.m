@@ -33,7 +33,6 @@ static NSString *const cellIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"stroyboard: %@", self.storyboard);
     //check if user is logged in, if not send to sign in page
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -61,15 +60,6 @@ static NSString *const cellIdentifier = @"Cell";
     self.tabBarController.tabBar.barTintColor = [Color twitterBlue];
     self.tabBarController.tabBar.tintColor = [Color fontWhite];
 
-//    [self performTweetSearchWithKeyword:@"trump"];
-//    [self performFacebookSearchWithKeyword:@"demi%20lovoto"];
-    //space = %20
-    // [self performFacebookSearchWithKeyword:@"P%5C!nk"];
-
-    //dynamically sizing cell not working properly********
-    //self.tableView.rowHeight = UITableViewAutomaticDimension;
-    //self.tableView.estimatedRowHeight = 50;
-
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -89,20 +79,13 @@ static NSString *const cellIdentifier = @"Cell";
     [query orderByDescending:@"updatedAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
         //read the array backwards
-
         // NSArray *reversedArray = [[objects reverseObjectEnumerator] allObjects];
 
         for (PFObject *obj in objects) {
 
-            //             NSString *artistFirstTwoNamesObjects = [obj objectForKey:@"nameString"];
             NSString *URI = [obj objectForKey:@"URI"];
-            //NSString *fullURI = [obj objectForKey:@"URIFullString"];
-
-            //add the object to global mutable array
-            //  NSLog(@"upper loop for URI: %@", URI);
 
             [self.searchStrings addObject:URI];
-            //NSLog(@"URIs: %@", self.searchStrings);
 
         }
 
@@ -111,17 +94,6 @@ static NSString *const cellIdentifier = @"Cell";
         NSArray *uniqueArray = [orderedSet array];
 
         for (int i = 0; i < 14; i++) {
-            //   for (NSString *uri in uniqueArray) {
-            //     NSLog(@"URIs minus dupes: %@", uri);
-
-
-            //             Spotify *spot = [Spotify new];
-            //             spot.searchTerm1 = @"";
-            //             spot.searchTerm2 = @"";
-            //             spot.searchTerm3 = @"";
-            //             spot.searchTerm4 = @"";
-            //             spot.searchTerm5 = @"";
-
             
             NSString *uri = [uniqueArray objectAtIndex:i];
             NSLog(@"loop for URI: %@", uri);
@@ -132,8 +104,6 @@ static NSString *const cellIdentifier = @"Cell";
                 //   NSLog(@"lil wayne");
                 NSString *local = @"\"lil%20wayne\"";
                 NSString *local1 = @"\"weezy\"";
-                // NSString *loc = @"\"#weezy\"";
-                //[self.herokuSearchableStrings addObject:loc];
                 [self.herokuSearchableStrings addObject:local];
                 [self.herokuSearchableStrings addObject:local1];
 
@@ -1166,15 +1136,8 @@ static NSString *const cellIdentifier = @"Cell";
                 break;
         }
 
-      //  [self.tableView reloadData];
-        NSLog(@"social media array: %@", [self.socialMediaArray firstObject]);
-
-
     }];
-    
-   // [self.tableView reloadData];
-//    NSLog(@"social media array: %@", self.socialMediaArray);
-    
+
 }
 
 
@@ -1291,10 +1254,8 @@ static NSString *const cellIdentifier = @"Cell";
                 //....MAIN PIC......//
                 NSDictionary *entities = item[@"entities"];
                 if ([entities objectForKey:@"media"]) {
-                  //  NSLog(@"main Image found on query level");
                     socMedia.mainImageBool = YES;
 
-                    //pulling out mainImage data from self.media array by loop
                     NSArray *media = entities[@"media"];
                     for (NSDictionary *itemy in media) {
 
@@ -1304,7 +1265,6 @@ static NSString *const cellIdentifier = @"Cell";
                     }
 
                 } else {
-                    //NSLog(@".......NO main Image found on query level......");
                     socMedia.mainImageBool = NO;
                 }
 
@@ -1348,10 +1308,6 @@ static NSString *const cellIdentifier = @"Cell";
                     socMedia.timeDiff = [NSString stringWithFormat:@"Over a week"];
                 }
 
-//                NSSortDescriptor *sorter = [NSSortDescriptor sortDescriptorWithKey:item[@"created_at"] ascending:NO];
-//                NSArray *sortedArray = [NSArray arrayWithObject:sorter];
-//                NSLog(@"sorting... %@", sortedArray);
-
                 [self.socialMediaArray addObject:socMedia];
 
                 [self.tableView reloadData];
@@ -1384,7 +1340,6 @@ static NSString *const cellIdentifier = @"Cell";
 
                 NSString *message = item[@"message"];
                 socBookMedia.text = message;
-                //NSLog(@"Facebook body text: %@", socBookMedia.text);
 
                 //screen Name
                 NSDictionary *from = item[@"from"];
@@ -1392,7 +1347,6 @@ static NSString *const cellIdentifier = @"Cell";
                 socBookMedia.screenName = screenName;
                 NSLog(@"Facebook username: %@", socBookMedia.screenName);
 
-                //need a way to get the picture from the user id
                 NSString *userID = item[@"id"];
                 socBookMedia.bookUserID = userID;
 
@@ -1403,7 +1357,6 @@ static NSString *const cellIdentifier = @"Cell";
                 NSData *mainPicData = [NSData dataWithContentsOfURL:mainPicURL];
                 socBookMedia.mainPicData = mainPicData;
                 socBookMedia.mainImageBool = YES;
-                //NSLog(@"book image string:%@", picture);
 
                 //facebook page of the image
                 NSString *picturePage = item[@"link"];
@@ -1447,12 +1400,6 @@ static NSString *const cellIdentifier = @"Cell";
                 } else{
                     socBookMedia.timeDiff = [NSString stringWithFormat:@"> a week"];
                 }
-
-
-
-                //  NSSortDescriptor *sorter = [NSSortDescriptor sortDescriptorWithKey:item[@"created_at"] ascending:NO];
-                //  NSArray *sortedArray = [NSArray arrayWithObject:sorter];
-                //  NSLog(@"sorting... %@", sortedArray);
                 
                 [self.socialMediaArray addObject:socBookMedia];
                 
@@ -1461,13 +1408,6 @@ static NSString *const cellIdentifier = @"Cell";
         }
     }];
 }
-
-
-//these delegate methods will never fire, when using a URL connection with a completion block handler, need to use :https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/URLLoadingSystem/Tasks/UsingNSURLConnection.html
-//async using a custom delegateobject that uses at least: connection:didRecieveResponse, connection:didReicieveData, connection:didFailWithError, and: connection:didFinishLoading (all our found as methods inn..: NSURLConnectionDelegate, NSURLCOnnectionDownloadDelegate, and NSURLCOnnectionDataDelegate protocols)
-
-
-
 
 
 

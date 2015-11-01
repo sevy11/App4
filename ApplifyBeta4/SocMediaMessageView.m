@@ -16,19 +16,14 @@
 
 @implementation SocMediaMessageView
 
+
+//class methods
 + (CGRect)defaultContentFrame   {
     return CGRectMake((7 + 25 + 5), 25, 274, 125);
 }
 
--(id)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [SocMediaMessageView setupContentInTextView:self];
-    }
-    return self;
-}
 
-+ (void)setupContentInTextView:(SocMediaMessageView *)view{
++ (void)setupContentInTextView:(SocMediaMessageView *)view  {
     view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
 
     //remove all subviews from the UITableViewCell contentView
@@ -47,20 +42,9 @@
     [view addSubview:view.profileImageView];
     [view addSubview:view.timeLabel];
     [view addSubview:view.mainImageView];
-
 }
-//update content and constraints on subviews
 
-- (void)updateContentWithSocMediaMessage:(SocialMedia *)content{
-    _mediaContent = content;
 
-    //update Subviews and social media message information
-//    [SocMediaMessageView loadImageFromNSDataAndKeyword:<#(NSString *)#> imageData:<#(NSData *)#> imageView:<#(UIImageView *)#>:content.userPicData imageView:_profileImageView];
-    _screenNameLabel.text = content.screenName;
-    _timeLabel.text = content.timeDiff;
-    
-
-}
 
 + (UILabel *)setupLabelWithFont:(UIFont *)font andColor:(UIColor *)fontColor{
     UILabel *label = [UILabel new];
@@ -75,6 +59,8 @@
     return label;
 }
 
+
+
 + (UIImageView *)setupImageView {
     UIImageView *imageView = [UIImageView new];
     imageView.clipsToBounds = YES;
@@ -83,11 +69,25 @@
 }
 
 
+//update content and constraints on subviews
+- (void)updateContentWithSocMediaMessage:(SocialMedia *)content{
+    _mediaContent = content;
+
+    //update Subviews and social media message information
+//    [SocMediaMessageView loadImageFromNSDataAndKeyword:<#(NSString *)#> imageData:<#(NSData *)#> imageView:<#(UIImageView *)#>:content.userPicData imageView:_profileImageView];
+    _screenNameLabel.text = content.screenName;
+    _timeLabel.text = content.timeDiff;
+
+}
 
 
-
-#pragma helper methods
-
+-(id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [SocMediaMessageView setupContentInTextView:self];
+    }
+    return self;
+}
 
 
 @end
