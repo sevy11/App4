@@ -5,4 +5,4 @@ Instagram for the ￼most talked about posts. It then delivers them to the user 
 deleting handles from your feed, we’ll find the relevant tweets and posts about the things you care for.
 
 ![Image](https://cloud.githubusercontent.com/assets/8518882/10871586/b0340a9e-80b0-11e5-8d02-41574f8619f5.png)
-![Image](https://cloud.githubusercontent.com/assets/8518882/10871586/b0340a9e-80b0-11e5-8d02-41574f8619f5.png)
+![Image](https://cloud.githubusercontent.com/assets/8518882/10871614/74676ac8-80b1-11e5-9bce-844241ef9f30.png)
