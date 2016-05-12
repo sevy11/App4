@@ -1,4 +1,4 @@
-# App4
+# IntuitiveSearch
 App that gives the user a unique experience without searching high and low for the best, most relevant social media.
 Firstly, it pings Spotify for your most recently listened to artists. From there it searches Twitter, Facebook and
 Instagram for the ￼most talked about posts. It then delivers them to the user loud and clear. Throw out adding and
